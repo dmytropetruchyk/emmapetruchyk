@@ -1,0 +1,26 @@
+ {{ define "main" }}
+ <!--<img src="{{ "images/logo2.svg" | relURL }}" alt="My Logo" style="height: 100px; vertical-align: middle;">-->
+  
+  
+
+ <img src="{{ "images/logo2.svg" | relURL }}" alt="My Logo" style="display: block; margin: auto; width: 500px; height: auto;">
+
+ {{ partial "title-home.html" . }} 
+ 
+ 
+  <!-- <section class="galleries">
+    {{ range where .Pages "Params.private" "ne" true }}
+      {{ partial "album-card.html" . }}
+    {{ end }}
+  </section>
+-->
+  
+  {{ partial "gallery.html" . }}
+  {{ partial "related.html" . }}
+  {{ with .Content }}
+    <section class="prose">
+      {{ . }}
+    </section>
+  {{ end }}
+{{ end }} 
+

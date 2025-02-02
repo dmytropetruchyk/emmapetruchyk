@@ -1,0 +1,17 @@
+<footer>
+ <!--  <section style="width: 300px; margin: 0 auto 20px; text-align: left; margin-left: 70px;">
+    <h2 style="text-align: left; margin-right: 0px;">Contact Me:</h2>
+    <p>📍 Location: Buffalo, USA</p>
+    <p>📱 Phone: +1 (716) 513-6556</p>
+    <p>📧 Email: emmapetruchyk@email.com</p>
+</section> -->
+  {{ partialCached "social-icons.html" . }}
+  <section>
+    {{ .Site.Copyright }}
+    {{ range .Site.Menus.footer }}
+      <a {{ with .Params.rel -}}rel="{{ . }}"{{ end -}} href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+    {{ end }}
+  </section>
+</footer>

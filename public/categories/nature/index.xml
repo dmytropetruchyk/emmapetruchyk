@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nature on Emma Petruchyk</title>
+    <link>http://localhost:1313/categories/nature/</link>
+    <description>Recent content in Nature on Emma Petruchyk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>emmapetruchyk@gmail.com (Emma Petruchyk)</managingEditor>
+    <webMaster>emmapetruchyk@gmail.com (Emma Petruchyk)</webMaster>
+    <copyright>©2025 Emma Petruchyk. All Rights Reserved.</copyright><atom:link href="http://localhost:1313/categories/nature/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

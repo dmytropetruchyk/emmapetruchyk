@@ -1,0 +1,60 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'EMMA PETRUCHYK'
+theme = "hugo-theme-gallery-main"
+
+
+copyright = "©2025 Emma Petruchyk. All Rights Reserved."
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy"]
+enableRobotsTXT = true
+
+timeZone = "Europe/Berlin"
+timeout = "120s"
+
+
+[params]
+  defaultTheme = "light"
+  description = "Example site for hugo-theme-gallery"
+  title = "Emma Petruchyk"
+  [params.author]
+    email = "emmapetruchyk@gmail.com"
+    name = "Emma Petruchyk"
+  [params.socialIcons]
+    facebook = "https://www.facebook.com/people/Emma-Petruchyk-Photography/61571069771487/"
+    instagram = "https://www.instagram.com/emmapetruchyk"
+    
+    youtube = "https://www.youtube.com/channel/UCtncAUUOQKEGwLPCZuU_6eQ"
+    email = "mailto:emmapetruchyk@gmail.com"
+    #website = "https://example.com"
+    #mastodon = "https://example.com"
+    #pixelfed = "https://example.com"
+    #mixcloud = "https://mixcloud.com"
+  [params.gallery]
+    boxSpacing = 1
+    #targetRowHeight = 288
+    #targetRowHeightTolerance = 0.25
+
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 100
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+
+
+[menu]
+  [[menu.footer]]
+    
+
+[services]
+  [services.rss]
+    limit = 100

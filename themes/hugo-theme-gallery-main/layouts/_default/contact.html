@@ -1,0 +1,43 @@
+{{ define "main" }}
+  {{ partial "title.html" . }}
+
+    <section class="prose contact-page">
+      <div class="contact-container">
+        <!-- Image Section -->
+        <div class="contact-image">
+          <img src="{{ "images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg" | relURL }}" alt="My Logo" class="contact-image-img">
+        </div>
+
+        <!-- Text Section -->
+        <div class="contact-text">
+          <div class="contact-text-inner">
+              <p class="contact-text-item">
+                📱 Phone: <span class="contact-text-value">+1 (716) 513-6556</span>
+              </p>
+              <p class="contact-text-item">
+                📧 Email: <a href="mailto:your@email.com" class="contact-text-value">emmapetruchyk@email.com</a>
+              </p>
+              <p class="contact-text-item">
+                📍 Location: <span class="contact-text-value">Buffalo, USA</span>
+            </p>
+            </div>
+            <form>
+              <label for="name">Name</label>
+               <input type="text" id="name" name="name">
+
+              <label for="email">Email</label>
+               <input type="email" id="email" name="email">
+
+              <label for="message">Message</label>
+               <textarea id="message" name="message"></textarea>
+
+              <button type="submit">Send</button>
+            </form>
+
+        <p>{{ .Content }}</p>
+        </div>
+
+      </div>
+    </section>
+
+{{ end }}
